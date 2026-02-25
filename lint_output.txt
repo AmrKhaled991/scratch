@@ -1,0 +1,60 @@
+
+> scratch@0.1.0 lint
+> eslint
+
+
+/Users/amrkhaled/Desktop/scratch-1/postcss.config.mjs
+  1:1  warning  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+/Users/amrkhaled/Desktop/scratch-1/src/app/layout.tsx
+  43:9  warning  Custom fonts not added in `pages/_document.js` will only load for a single page. This is discouraged. See: https://nextjs.org/docs/messages/no-page-custom-font  @next/next/no-page-custom-font
+
+/Users/amrkhaled/Desktop/scratch-1/src/components/ErrorReporter.tsx
+  11:48  warning  'reset' is defined but never used                                      @typescript-eslint/no-unused-vars
+  71:7   warning  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+
+/Users/amrkhaled/Desktop/scratch-1/src/components/ProductCard.tsx
+  4:8  warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/amrkhaled/Desktop/scratch-1/src/components/ui/chart.tsx
+  128:15  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  129:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  184:30  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  264:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  265:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  281:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/amrkhaled/Desktop/scratch-1/src/components/ui/sidebar.tsx
+  611:26  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+/Users/amrkhaled/Desktop/scratch-1/src/components/ui/sidebar.tsx:611:26
+  609 |   // Random width between 50 to 90%.
+  610 |   const width = React.useMemo(() => {
+> 611 |     return `${Math.floor(Math.random() * 40) + 50}%`
+      |                          ^^^^^^^^^^^^^ Cannot call impure function
+  612 |   }, [])
+  613 |
+  614 |   return (  react-hooks/purity
+
+/Users/amrkhaled/Desktop/scratch-1/src/lib/cart-context.tsx
+  86:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/amrkhaled/Desktop/scratch-1/src/lib/cart-context.tsx:86:5
+  84 |       // ignore
+  85 |     }
+> 86 |     setHydrated(true);
+     |     ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  87 |   }, []);
+  88 |
+  89 |   // Save to localStorage on every change (after hydration)  react-hooks/set-state-in-effect
+
+✖ 13 problems (8 errors, 5 warnings)
+

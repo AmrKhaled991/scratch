@@ -8,9 +8,9 @@ import Navbar from "@/components/Navbar";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-  title: "صيدليات مكه – منتجات الجمال والصحة",
+  title: "صيدليات ديفعمر - DevAmr – منتجات الجمال والصحة",
   description:
-    "اطلب منتجات الجمال والرعاية الصحية الاحترافية من صيدليات مكه. العناية بالبشرة، الفيتامينات، العناية بالشعر والمزيد بأسعار بالجنيه المصري.",
+    "اطلب منتجات الجمال والرعاية الصحية الاحترافية من صيدليات ديفعمر - DevAmr. العناية بالبشرة، الفيتامينات، العناية بالشعر والمزيد بأسعار بالجنيه المصري.",
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
     apple: "/favicon.svg",

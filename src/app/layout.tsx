@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import VisualEditsMessenger from "@/visual-edits/VisualEditsMessenger"; 
+import VisualEditsMessenger from "@/visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 import { CartProvider } from "@/lib/cart-context";
@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   title: "صيدليات مكه – منتجات الجمال والصحة",
   description:
     "اطلب منتجات الجمال والرعاية الصحية الاحترافية من صيدليات مكه. العناية بالبشرة، الفيتامينات، العناية بالشعر والمزيد بأسعار بالجنيه المصري.",
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -20,7 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-        <body suppressHydrationWarning className="antialiased font-sans" style={{ fontFamily: "'Cairo', 'Tajawal', Arial, sans-serif" }}>
+      <body
+        suppressHydrationWarning
+        className="antialiased font-sans"
+        style={{ fontFamily: "'Cairo', 'Tajawal', Arial, sans-serif" }}
+      >
         <ErrorReporter />
         <Script
           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js"

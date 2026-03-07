@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="ar" dir="rtl">
       <body
         suppressHydrationWarning
-        className="antialiased font-sans"
+        className="antialiased font-sans overflow-x-hidden"
         style={{ fontFamily: "'Cairo', 'Tajawal', Arial, sans-serif" }}
       >
         <ErrorReporter />

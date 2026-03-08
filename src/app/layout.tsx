@@ -6,6 +6,7 @@ import Script from "next/script";
 import { CartProvider } from "@/lib/cart-context";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "sonner";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "صيدليات ديفعمر - DevAmr – منتجات الجمال والصحة",
@@ -46,7 +47,8 @@ export default function RootLayout({
         />
         <CartProvider>
           <Navbar />
-          {children}
+          <main className="grow">{children}</main>
+          <Footer />
           <Toaster position="top-left" richColors />
         </CartProvider>
         <VisualEditsMessenger />

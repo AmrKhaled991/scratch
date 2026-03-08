@@ -286,36 +286,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div>
-              <span className="text-white font-bold text-lg">
-                صيدليات ديفعمر - DevAmr
-              </span>
-              <p className="text-sm mt-1">
-                منتجات الصحة والجمال الاحترافية للصيدليات.
-              </p>
-              <p className="text-sm mt-1">جمهورية مصر العربية 🇪🇬</p>
-            </div>
-            <div className="flex gap-6 text-sm">
-              <Link
-                href="/products"
-                className="hover:text-white transition-colors"
-              >
-                المنتجات
-              </Link>
-              <Link href="/cart" className="hover:text-white transition-colors">
-                السلة
-              </Link>
-            </div>
-          </div>
-          <p className="text-xs text-center mt-6 text-gray-600">
-            &copy; {new Date().getFullYear()} فارماكير ستور. جميع الحقوق محفوظة.
-          </p>
-        </div>
-      </footer>
+      {/* End of Page content */}
     </div>
   );
 }

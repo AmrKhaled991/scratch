@@ -13,7 +13,7 @@ export default function AboutPage() {
           dir="rtl"
         >
           <p className="text-lg">
-            مرحباً بك في <strong>صيدليات ديفعمر (DevAmr)</strong>. نحن صيدلية
+            مرحباً بك في <strong>صيدليات الاتحاد الخليجي</strong>. نحن صيدلية
             وصرح متكامل لمنتجات الرعاية الصحية والتجميلية.
           </p>
           <p>

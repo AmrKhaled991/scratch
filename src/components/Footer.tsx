@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Brand & Contact */}
           <div>
             <span className="text-white font-bold text-lg mb-4 block">
-              صيدليات ديفعمر - DevAmr
+              صيدليات الاتحاد الخليجي
             </span>
             <p className="text-sm mb-6">
               منتجات الصحة والجمال الاحترافية لعملائنا في جميع أنحاء مصر.
@@ -122,7 +122,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-10 pt-6">
           <p className="text-xs text-center text-gray-500">
-            &copy; {new Date().getFullYear()} صيدليات ديفعمر - DevAmr. جميع
+            &copy; {new Date().getFullYear()} صيدليات الاتحاد الخليجي. جميع
             الحقوق محفوظة.
           </p>
         </div>

@@ -13,7 +13,7 @@ export default function PrivacyPage() {
           dir="rtl"
         >
           <p>
-            نحن في <strong>صيدليات ديفعمر - DevAmr</strong> نولي اهتماماً بالغاً
+            نحن في <strong>صيدليات الاتحاد الخليجي</strong> نولي اهتماماً بالغاً
             لخصوصية عملائنا ونحرص على حماية بياناتهم الشخصية.
           </p>
           <h2 className="text-xl font-bold text-gray-900 mt-6 mb-3">

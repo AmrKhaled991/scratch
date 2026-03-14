@@ -63,7 +63,7 @@ export default function CartPage() {
         `• ${product.nameAr} (${product.unit}) × ${quantity} = ${(product.price * quantity).toLocaleString("ar-EG")} جنيه`,
     );
     const message =
-      `🛒 *طلب جديد – صيدليات ديفعمر - DevAmr*\n\n` +
+      `🛒 *طلب جديد – صيدليات الاتحاد الخليجي*\n\n` +
       `👤 الاسم: ${form.name}\n` +
       `📞 الهاتف: ${form.phone}\n` +
       `📍 العنوان: ${form.address}\n\n` +

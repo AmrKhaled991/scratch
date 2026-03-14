@@ -22,7 +22,7 @@ export default function Navbar() {
               <span className="text-lg font-bold text-gray-900">صيدليات</span>
               <span className="text-lg font-bold text-emerald-600">
                 {" "}
-                ديفعمر - DevAmr
+                الاتحاد الخليجي
               </span>
             </div>
           </Link>

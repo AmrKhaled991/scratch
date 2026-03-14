@@ -13,7 +13,7 @@ export default function ShippingPage() {
           dir="rtl"
         >
           <p>
-            نسعى في <strong>صيدليات ديفعمر</strong> لتوصيل طلباتك في أسرع وقت
+            نسعى في <strong>صيدليات الاتحاد الخليجي</strong> لتوصيل طلباتك في أسرع وقت
             وبأعلى درجات الأمان.
           </p>
           <h2 className="text-xl font-bold text-gray-900 mt-6 mb-3">

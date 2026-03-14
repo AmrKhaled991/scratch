@@ -20,7 +20,7 @@ export default function ShippingPage() {
             مناطق التغطية
           </h2>
           <p>
-            نوفر خدمة التوصيل لجميع مناطق الإسكندرية (Alexandria) بالإضافة إلى
+            نوفر خدمة التوصيل لجميع مناطق المنصورة (Mansoura) بالإضافة إلى
             التوصيل لكافة محافظات جمهورية مصر العربية من خلال شركات شحن معتمدة.
           </p>
           <h2 className="text-xl font-bold text-gray-900 mt-6 mb-3">
@@ -28,7 +28,7 @@ export default function ShippingPage() {
           </h2>
           <ul className="list-disc list-inside space-y-2 mt-2">
             <li>
-              <strong>داخل الإسكندرية:</strong> في نفس اليوم أو خلال 24 ساعة
+              <strong>داخل المنصورة:</strong> في نفس اليوم أو خلال 24 ساعة
               للطلبات قبل الساعة 3 عصراً.
             </li>
             <li>

@@ -47,7 +47,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-semibold text-gray-900">العنوان</h3>
                 <p className="text-gray-600">
-                  Alexandria, Egypt (الإسكندرية، مصر)
+                  Mansoura, Egypt (المنصورة، مصر)
                 </p>
               </div>
             </div>
